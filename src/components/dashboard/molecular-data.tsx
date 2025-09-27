@@ -88,8 +88,8 @@ export function MolecularData() {
                 {molecularData.map((sample) => (
                 <TableRow key={sample.id}>
                     <TableCell className="font-medium">{sample.id}</TableCell>
-                    <TableCell className="font-mono text-xs">{sample.coiMarker.substring(0, 15)}...</TableCell>
-                    <TableCell className="font-mono text-xs">{sample.rrnaMarker.substring(0, 15)}...</TableCell>
+                    <TableCell className="font-mono text-xs">{sample.coiMarker.substring(0, 15)}</TableCell>
+                    <TableCell className="font-mono text-xs">{sample.rrnaMarker.substring(0, 15)}</TableCell>
                     <TableCell className="text-right">
                     {(sample.confidence * 100).toFixed(0)}%
                     </TableCell>

@@ -67,9 +67,11 @@ export function TaxonomicClassification() {
       <form action={formAction} ref={formRef}>
         <CardContent className="space-y-4">
           <div className="grid w-full gap-1.5">
-            <Label htmlFor="sampleData">Biological Sample Data</Label>
+            <Label htmlFor="sampleData">Paste DNA sequences, morphological measurements,etc in cms.
+</Label>
             <Textarea
-              placeholder="Paste DNA sequences, morphological measurements, etc."
+              placeholder="Example format:
+Standard Length, Head Length, Body Depth, Dorsal Fin Rays, Pectoral Fin Rays, Gill Rakers"
               id="sampleData"
               name="sampleData"
               required
